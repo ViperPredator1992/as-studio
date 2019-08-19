@@ -1,0 +1,28 @@
+{
+  "name": "as-studio",
+  "version": "1.0.0",
+  "description": "Web studio",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-tinypng-compress": "^1.2.5"
+  },
+  "devDependencies": {
+    "gulp-clean-css": "^4.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ViperPredator1992/as-studio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ViperPredator1992/as-studio/issues"
+  },
+  "homepage": "https://github.com/ViperPredator1992/as-studio#readme"
+}
