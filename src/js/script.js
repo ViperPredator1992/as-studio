@@ -14,9 +14,13 @@ document.addEventListener('DOMContentLoaded', () => {
             let target = event.target;
 
             if (target.closest('.burger')) {
-                menu.classList.add('burger-open');
-                menuNav.style.display = 'block';
-            } else if (target.classList.contains('burger')) {
+                menu.classList.toggle('burger-open');
+                if (menuNav.style.display === 'block') {
+                    menuNav.style.display = 'none';
+                } else {
+                    menuNav.style.display = 'block';
+                }
+            } else if (target.classList.closest('burger')) {
                 menu.classList.remove('burger-open');
                 menuNav.style.display = 'none';
             } else if (target.tagName !== 'DIV') {
