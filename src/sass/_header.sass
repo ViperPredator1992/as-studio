@@ -1,3 +1,72 @@
 .header
     background-color: $black
-    
+    & .container
+        position: relative
+    &__logo
+        position: absolute
+        top: 0
+        width: 140px
+        height: 100px
+        background-color: $white
+        z-index: 5
+        & img
+            max-width: 132px
+            margin: auto
+    &__email
+        max-width: 201px
+        width: 100%
+        height: 50px
+        display: flex
+        align-items: center
+        justify-content: center
+    &__phone
+        max-width: 201px
+        width: 100%
+        height: 50px
+        display: flex
+        align-items: center
+        justify-content: center
+        & span
+            padding-bottom: 2px
+            border-bottom: 2px dotted #000000
+        & svg
+            margin-right: 6px
+    &-links
+        display: flex
+        justify-content: flex-end                           
+.nav
+    &-list
+        margin: 0 40px 0 0
+        padding: 0
+        list-style-type: none
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        min-height: 50px
+        &__item
+            margin: 0 10px
+        &__link
+            font-weight: bold
+            font-size: 10px
+            line-height: 16px
+            letter-spacing: 1.5px
+            text-transform: uppercase 
+            color: $white
+            padding: 16px 5px
+            position: relative
+            overflow: hidden
+            border-bottom: 2px solid transparent
+            transition: .6s
+            &::before
+                content: ''
+                width: 0%
+                height: 2px
+                background-color: $green
+                position: absolute
+                left: -10px
+                bottom: 15px
+                transition: .6s
+            &:hover
+                color: $green
+                &::before
+                    width: 90%

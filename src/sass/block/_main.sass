@@ -1,0 +1,21 @@
+.main
+    background-color: $grey
+    position: relative
+    min-height: 610px
+    &::before
+        content: ''
+        background: url(../img/frame.png) left center no-repeat
+        min-height: 610px
+        width: 50%
+        position: absolute
+        top: 0
+        left: 0
+        z-index: 5
+    &::after
+        content: ''
+        background: url(../img/header_img.jpg) right center no-repeat
+        min-height: 610px
+        width: 50%
+        position: absolute
+        top: 0
+        right: 0

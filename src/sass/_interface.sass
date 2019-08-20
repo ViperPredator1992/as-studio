@@ -6,8 +6,9 @@
 body
     font-family: Montserrat, sans-serif
     font-size: 14px
+    font-weight: normal
 .container
-    max-width: 1700px
+    max-width: 1170px
     padding: 0 15px
     margin: auto
 input
@@ -19,4 +20,34 @@ button
     cursor: pointer 
 a
     text-decoration: none
-    display: block   
+    display: block  
+.email
+    background-color: #367BF5
+    color: #ffffff
+    font-family: Roboto, sans-serif
+    font-weight: 500
+    font-size: 14px
+    letter-spacing: 0.1px
+.phone
+    background-color: #ffffff
+    color: #000000
+    letter-spacing: 0.75px
+    font-weight: 600
+.burger
+    display: none
+    background-color: transparent
+    border: none
+    position: absolute
+    height: 30px
+    width: 34px
+    top: 10px
+    right: 15px
+    cursor: pointer
+.burger-open .burger-top__line
+    transform: rotate(45deg)
+    top: 10px  
+.burger-open .burger-center__line
+    opacity: 0 
+.burger-open .burger-bottom__line
+    transform: rotate(-45deg)
+    top: 10px         
