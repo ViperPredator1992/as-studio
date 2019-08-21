@@ -259,9 +259,18 @@
                     </div>
                 </div>
             </section>
-            <section id="contacts" class="section contacts">
+            <section id="contacts" class="section-form contacts">
                 <div class="container">
-
+                    <h2 class="section-title contacts__title">оставьте заявку на сайте
+                    и мы вам перезвоним</h2>
+                    <span class="section-subtitle contacts__subtitle">Мы разрабатываем лендинги в 6 этапов. Качественная проработка КАЖДОГО из них прямо влияет на качество трафика, конверсию
+                    лендинга, качество лидов. А соответственно - на вашу прибыль.</span>
+                    <form action="mail.php" class="contacts-form" method="post">
+                        <input type="text" name="name" placeholder="Ваше имя" class="contacts-form__input input">
+                        <input type="tel" name="phone" placeholder="Номер телефона" class="contacts-form__input input">
+                        <input type="email" name="email" placeholder="Ваш e-mail" class="contacts-form__input input">
+                        <button type="submit" class="contacts-form__button">отправить заявку</button>
+                    </form>
                 </div>
             </section>
         </main>
@@ -297,6 +306,7 @@
         </footer>
     </div>
     <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
     <script src="./js/jquery.isotope.min.js"></script>
     <script src="./js/script.js"></script>
 </body>

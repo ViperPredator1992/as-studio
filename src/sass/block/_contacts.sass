@@ -1,3 +1,46 @@
 .contacts
     background: url(../img/feedback_background.jpg) center no-repeat
-    background-size: cover
+    &__title
+        color: $white
+        max-width: 470px
+        margin-bottom: 10px
+    &__subtitle
+        color: $white
+        max-width: 690px
+        margin-bottom: 30px  
+    &-form
+        display: flex
+        flex-wrap: wrap
+        &__input
+            max-width: 250px
+            height: 40px
+            width: 100%
+            background-color: $input 
+            border-radius: 40px
+            border: none
+            padding: 0 20px 0 30px
+            margin: 0 20px
+            &::placeholder
+                font-family: Roboto, sans-serif
+                font-weight: 500
+                font-size: 14px
+                letter-spacing: 0.75px
+                text-transform: uppercase
+                color: $place
+        &__button
+            max-width: 200px
+            height: 40px
+            width: 100%
+            background-color: $green 
+            border-radius: 40px
+            color: $white
+            display: flex
+            align-items: center
+            justify-content: center
+            border: none
+            font-family: Roboto, sans-serif
+            font-weight: 500
+            font-size: 14px
+            letter-spacing: 0.75px
+            text-transform: uppercase
+            margin-left: 50px

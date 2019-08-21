@@ -31,6 +31,13 @@
         &-works
             margin: auto
             max-width: 880px          
+@media (max-width: 1150px)
+    .contacts
+        &-form
+            &__input
+                margin: 0 10px
+            &__button
+                margin-left: 30px    
 @media (max-width: 1140px)
     .header
         &__email
@@ -54,7 +61,18 @@
         background-size: 35%, contain
         &-block
             &:first-child
-                max-width: 290px                                                   
+                max-width: 290px 
+    .contacts
+        &-form
+            max-width: 600px
+            justify-content: space-between
+            &__input
+                margin: 0 0 25px
+                &:nth-child(3)
+                    margin: 0
+            &__button
+                margin-left: 0   
+                max-width: 250px                                                                   
 @media (max-width: 992px)  
     .nav
         &-list
@@ -188,6 +206,10 @@
     .result
         &__text
             max-width: 550px
+@media (max-width: 711px)
+    .section
+        &-form
+            padding: 35px 0
 @media (max-width: 640px)
     .advantages
         &-block
@@ -198,6 +220,20 @@
     .result
         &__text
             max-width: 420px
+@media (max-width: 550px)
+    .section
+        &-form
+            padding: 20px 0
+    .contacts
+        background-size: cover
+        &__subtitle
+            margin-bottom: 15px
+        &-form
+            flex-direction: column
+            &__input
+                margin: 0 0 8px
+                &:nth-child(3)
+                    margin: 0 0 8px    
 @media (max-width: 470px)
     .section
         padding: 35px 0
