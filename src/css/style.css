@@ -1287,6 +1287,130 @@ a {
   margin-left: 50px;
 }
 
+.review__title {
+  max-width: 300px;
+}
+
+.review__line {
+  margin-bottom: 50px;
+}
+
+.review-content {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.review-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  height: 610px;
+}
+
+.review-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: opacity .5s;
+  -o-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+.review-list__item-active {
+  opacity: 1;
+  -webkit-transition: opacity .5s;
+  -o-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+.review-list__image {
+  max-width: 382px;
+  margin-right: 40px;
+}
+
+.review-list-info {
+  max-width: 490px;
+}
+
+.review__site-name {
+  margin-bottom: 30px;
+  font-family: Roboto, sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+  color: #5E6366;
+}
+
+.review__text {
+  font-family: Roboto, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  color: rgba(0, 0, 0, 0.87);
+  margin-bottom: 20px;
+}
+
+.review__text:last-child {
+  margin-bottom: 0;
+}
+
+.review-arrow__prev {
+  background: url(../img/icons/arrow_left.png) no-repeat;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 0;
+  top: 50%;
+}
+
+.review-arrow__next {
+  background: url(../img/icons/arrow_right.png) no-repeat;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  right: 0;
+  top: 50%;
+}
+
+.review-bottom {
+  position: relative;
+}
+
+.review-bottom::before {
+  content: url(../img/icons/reviews_quotes_start.png);
+  position: absolute;
+  top: -15px;
+  left: -20px;
+  z-index: -1;
+}
+
+.review-bottom::after {
+  content: url(../img/icons/reviews_quotes_finish.png);
+  position: absolute;
+  right: -15px;
+  bottom: -15px;
+  z-index: -1;
+}
+
 .footer {
   background-color: rgba(0, 0, 0, 0.87);
   padding: 40px 0 43px;

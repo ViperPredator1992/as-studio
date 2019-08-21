@@ -64,6 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     });
 
+    // Validate form
     $('#form').validate({
         lang: 'ru',
         rules: {
@@ -90,5 +91,14 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
+
+    // Slider
+    const slider = () => {
+
+        
+
+    };
+
+    slider();
 
 });
