@@ -1,11 +1,68 @@
+@media (max-width: 1440px)
+    .main
+        &-block
+            &:last-child
+                right: -100px
+@media (max-width: 1340px)
+    .main
+        background-size: 40%, contain
+        &-block
+            &:last-child
+                right: -40px
+@media (max-width: 1230px)
+    .main
+        &-section 
+            & .container
+                padding: 120px 15px
+        &-block
+            &:last-child
+                right: 0
+@media (max-width: 1170px)
+    .portfolio
+        &-block
+            &__link
+                & img
+                    max-width: 220px
+        &-works
+            margin: auto
+            max-width: 880px
 @media (max-width: 1140px)
     .header
         &__email
             display: none
+@media (max-width: 1080px)
+    .section
+        &-title
+            font-size: 24px 
+            line-height: normal
+    .main
+        &-wrap
+            &:nth-child(2)
+                margin: 0 30px
+            &__number
+                font-size: 45px
+@media (max-width: 1080px)
+    .section
+        &-title
+            font-size: 18px
+    .main
+        background-size: 35%, contain
+        &-block
+            &:first-child
+                max-width: 290px                                                   
 @media (max-width: 992px)  
     .nav
         &-list
             margin: 0 5px 0 0 
+    .menu
+        &-list
+            &__item
+                margin: 0 8px
+    .advantages
+        &-block
+            &s
+                max-width: 800px
+                margin: auto                        
 @media (max-width: 920px)
     .header
         & .container
@@ -68,6 +125,121 @@
         &-bottom
             &__line
                 top: 22px
+    .main
+        background-size: 100%
+        &-section 
+            & .container
+                padding: 60px 15px
+        &-block
+            &:last-child
+                display: none 
+            &s
+                justify-content: center
+    .footer
+        & .container
+            flex-direction: column 
+    .menu
+        &-list
+            flex-direction: column
+            align-items: center
+            margin: 30px 0 
+            &__item
+                margin: 10px 0 
+    .portfolio
+        &-top
+            flex-direction: column
+            align-items: end
+        &-left
+            &__line
+                margin-bottom: 15px 
+    .about
+        &__line
+            margin-bottom: 40px                
+@media (max-width: 910px)
+    .portfolio
+        & .container
+            max-width: 480px
+        &-list
+            &__item
+                margin: 0 5px
+        &-block
+            margin-bottom: 15px         
+@media (max-width: 830px)
+    .about
+        &-block
+            &s
+                flex-direction: column
+                align-items: center
+@media (max-width: 768px)
+    .result
+        &__text
+            max-width: 550px
+@media (max-width: 640px)
+    .advantages
+        &-block
+            &s
+                flex-direction: column
+                align-items: center
+@media (max-width: 600px)
+    .result
+        &__text
+            max-width: 420px
+@media (max-width: 470px)
+    .section
+        padding: 35px 0
+    .portfolio
+        &-block
+            &__link
+                & img
+                    max-width: 150px
+        &-works
+            max-width: 300px
+    .result
+        &__title
+            font-size: 38px
+            line-height: 45px
+        &__text
+            max-width: 360px 
+            font-size: 14px
+            line-height: 20px                                                                                                                                                 
+@media (max-width: 425px)
+    .main
+        background-size: 100%
+        &-section 
+            & .container
+                padding: 35px 10px 20px
+        &-block
+            &__subtitle
+                margin-bottom: 14px
+    .footer
+        &-menu
+            display: none
+        &__link
+            margin-bottom: 30px
+    .result
+        &__text
+            max-width: 310px
+    .advantages
+        &__subtitle
+            margin-bottom: 20px
+        &-block
+            margin-bottom: 20px
+        &__line
+            margin-bottom: 15px                                                                   
+@media (max-width: 391px)
+    .portfolio
+        &-list
+            justify-content: center        
 @media (max-width: 375px)
     .burger
         width: 30px
+    .portfolio
+        &-works
+            max-width: 280px
+        &-block
+            &__link
+                & img
+                    max-width: 140px 
+    .result
+        &__text
+            max-width: 260px                           

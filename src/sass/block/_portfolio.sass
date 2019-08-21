@@ -1,0 +1,51 @@
+.portfolio
+    &-top
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 40px
+    &-works
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        justify-content: space-between
+    &-left
+        max-width: 300px
+    &-list
+        margin: 0
+        padding: 0
+        list-style-type: none
+        display: flex
+        flex-wrap: wrap
+        &__item
+            margin: 0 10px    
+        &__link
+            color: $grey
+            font-weight: bold
+            font-size: 10px
+            letter-spacing: 1.5px
+            text-transform: uppercase
+            position: relative
+            overflow: hidden
+            transition: .6s
+            padding: 10px 5px
+            &::before
+                content: ''
+                width: 0%
+                height: 2px
+                background-color: $green
+                position: absolute
+                left: -10px
+                bottom: 5px
+                transition: .6s
+            &:hover,
+            &.current
+                color: $green
+                &::before
+                    width: 90%
+    &-block
+        &__link
+            & img
+                max-width: 285px
+                width: 100%                    

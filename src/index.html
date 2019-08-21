@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="shortcut icon" href="img/faviсon.png">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="./img/faviсon.png">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <div class="wrapper">
@@ -52,27 +52,226 @@
                 </div>
             </div>
         </header>
-        <section id="main" class="main">
-            <div class="container">
-
-            </div>
-        </section>
-        <section id="portfolio">
-            <div class="container"></div>
-        </section>
-        <section id="about">
-            <div class="container"></div>
-        </section>
-        <section id="advantages">
-            <div class="container"></div>
-        </section>
-        <section id="contacts">
-            <div class="container"></div>
-        </section>
+        <main>
+            <section id="main" class="main main-section">
+                <div class="container">
+                    <div class="main-blocks">
+                        <div class="main-block">
+                            <h1 class="section-title main-block__title">Мы создаем лучшее решение для вашего бизнеса</h1>
+                            <div class="section-line main-block__line"></div>
+                            <span class="section-subtitle main-block__subtitle">Мы делаем то, что продает ваши продукты и услуги. Улучшаем то, что есть. Создаем то, чего не было.</span>
+                            <a href="https://docs.google.com/forms/d/187yMy8A0qhV6QTlAKujP4WV99TskdCPF2eAMRd--DK4/edit" class="section-link main-block__link" target="_blank">заполнить бриф</a>
+                        </div>
+                        <div class="main-block">
+                            <div class="main-inner">
+                                <div class="main-inner-top">
+                                    <div class="main-wrap">
+                                        <div class="main-wrap__number">100</div>
+                                        <div class="main-wrap__text">Созданых
+                                        проектов</div>
+                                    </div>
+                                    <div class="main-wrap">
+                                        <div class="main-wrap__number">26</div>
+                                        <div class="main-wrap__text">Счастливых
+                                        клиентов</div>
+                                    </div>
+                                    <div class="main-wrap">
+                                        <div class="main-wrap__number">5</div>
+                                        <div class="main-wrap__text">Штат
+                                            компании</div>
+                                    </div>
+                                </div>
+                                <div class="main-inner-bottom">
+                                    <div class="main-wrap">
+                                        <div class="main-wrap__number">20</div>
+                                        <div class="main-wrap__text">Чашек
+                                        кофе в день</div>
+                                    </div>
+                                    <div class="main-wrap">
+                                        <div class="main-wrap__number">10</div>
+                                        <div class="main-wrap__text">Увелечение
+                                        бюджета</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="portfolio" class="section portfolio">
+                <div class="container">
+                    <div class="portfolio-top">
+                        <div class="portfolio-left">
+                            <h2 class="section-title portfolio-left__title">Наше
+                            портфолио</h2>
+                            <div class="section-line portfolio-left__line"></div>
+                        </div>
+                        <nav class="portfolio-right">
+                            <ul class="portfolio-list">
+                                <li class="portfolio-list__item">
+                                    <a href="#" data-filter="*" class="portfolio-list__link current">все работы</a>
+                                </li>
+                                <li class="portfolio-list__item">
+                                    <a href="#" data-filter=".landing" class="portfolio-list__link">Landing page</a>
+                                </li>
+                                <li class="portfolio-list__item">
+                                    <a href="#" data-filter=".corporate" class="portfolio-list__link">Корпоративные сайты</a>
+                                </li>
+                                <li class="portfolio-list__item">
+                                    <a href="#" data-filter=".online-shop" class="portfolio-list__link">Интернет магазины</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="portfolio-bottom">
+                        <div class="portfolio-works">
+                            <div class="portfolio-block corporate">
+                                <a href="https://wowmama.pro/" class="portfolio-block__link">
+                                    <img src="img/portfolio_img_wowmama.jpg" alt="portfolio_img_wowmama">
+                                </a>
+                            </div>
+                            <div class="portfolio-block corporate">
+                                <a href="https://wowmama.pro/" class="portfolio-block__link">
+                                    <img src="img/portfolio_img_power-pullup.jpg" alt="portfolio_img_wowmama">
+                                </a>
+                            </div>
+                            <div class="portfolio-block landing">
+                                <a href="https://wowmama.pro/" class="portfolio-block__link">
+                                    <img src="img/portfolio_img_dsn-center.jpg" alt="portfolio_img_wowmama">
+                                </a>
+                            </div>
+                            <div class="portfolio-block online-shop">
+                                <a href="https://wowmama.pro/" class="portfolio-block__link">
+                                    <img src="img/portfolio_img_iq-bot.jpg" alt="portfolio_img_wowmama">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="about" class="section about">
+                <div class="container">
+                    <h2 class="section-title about__title">Наши
+                    услуги</h2>
+                    <div class="section-line about__line"></div>
+                    <div class="about-blocks">
+                        <div class="about-block">
+                            <div class="about-block__image">
+                                <img src="./img/vector.png" alt="vector">
+                            </div>
+                            <div class="about-block__line"></div>
+                            <span class="about-block__title">Создание
+                            Landing page</span>
+                            <p class="about-block__price">от 80$</p>
+                            <a href="#contacts" class="about-block__link">заказать</a>
+                        </div>
+                        <div class="about-block">
+                            <div class="about-block__image">
+                                <img src="./img/vector2.png" alt="vector2">
+                            </div>
+                            <div class="about-block__line"></div>
+                            <span class="about-block__title">SEO оптимизация
+                            и продвижение</span>
+                            <p class="about-block__price">от 120$</p>
+                            <a href="#contacts" class="about-block__link">заказать</a>
+                        </div>
+                        <div class="about-block">
+                            <div class="about-block__image">
+                                <img src="./img/vector3.png" alt="vector3">
+                            </div>
+                            <div class="about-block__line"></div>
+                            <span class="about-block__title">Поддержка и
+                            обслуживание сайтов</span>
+                            <p class="about-block__price">от 20$/месяц</p>
+                            <a href="#contacts" class="about-block__link">заказать</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="advantages" class="section advantages">
+                <div class="container">
+                    <h2 class="section-title advantages__title">Почему наши
+                    проекты работают?</h2>
+                    <div class="section-line advantages__line"></div>
+                    <span class="section-subtitle advantages__subtitle">Мы разрабатываем лендинги в 6 этапов. Качественная проработка КАЖДОГО из них прямо влияет на качество трафика, конверсию
+                    лендинга, качество лидов. А соответственно - на вашу прибыль.</span>
+                    <div class="advantages-blocks">
+                        <div class="advantages-block">
+                            <h6 class="advantages-block__title">1. создаем портрет клиента</h6>
+                            <p class="advantages-block__text">Анализируем целевую аудиторию. Узнаем потребности, боли. Критерии принятия решения.</p>
+                        </div>
+                        <div class="advantages-block">
+                            <h6 class="advantages-block__title">2. создаем карту
+                            поведения клиента на сайте</h6>
+                            <p class="advantages-block__text">Анализируем целевую аудиторию. Узнаем потребности, боли. Критерии принятия решения.</p>
+                        </div>
+                        <div class="advantages-block">
+                            <h6 class="advantages-block__title">3. создаем прототип, утп, прорабатываем триггеры.</h6>
+                            <p class="advantages-block__text">Анализируем целевую аудиторию. Узнаем потребности, боли. Критерии принятия решения.</p>
+                        </div>
+                        <div class="advantages-block">
+                            <h6 class="advantages-block__title">4. делаем дизайн</h6>
+                            <p class="advantages-block__text">Анализируем целевую аудиторию. Узнаем потребности, боли. Критерии принятия решения.</p>
+                        </div>
+                        <div class="advantages-block">
+                            <h6 class="advantages-block__title">5. техническая реализация</h6>
+                            <p class="advantages-block__text">Анализируем целевую аудиторию. Узнаем потребности, боли. Критерии принятия решения.</p>
+                        </div>
+                        <div class="advantages-block">
+                            <h6 class="advantages-block__title">6. разрабатываем рекламную компанию.</h6>
+                            <p class="advantages-block__text">Анализируем целевую аудиторию. Узнаем потребности, боли. Критерии принятия решения.</p>
+                        </div>
+                    </div>
+                    <div class="result">
+                        <div class="result__title">РЕЗУЛЬТАТ</div>
+                        <p class="result__text">вы получите автоматизировынный инструмент с ежемесячной окупаемостью вложений от 200% до 1100%, под ключ за 5 дней!</p>
+                    </div>
+                </div>
+            </section>
+            <section class="section case">
+                <div class="container">
+                    <h2 class="section-title case__title">наши<br>
+                    последние кейсы</h2>
+                    <div class="section-line case__line"></div>
+                </div>
+            </section>
+            <section id="contacts" class="contacts">
+                <div class="container"></div>
+            </section>
+        </main>
         <footer class="footer">
-            <div class="container"></div>
+            <div class="container">
+                <a href="index.html" class="footer__link">
+                    <img src="img/logo_footer.png" alt="logo_footer">
+                </a>
+                <nav class="footer-menu">
+                    <ul class="menu-list">
+                        <li class="menu-list__item">
+                            <a href="#main" class="menu-list__link">Главная</a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a href="#portfolio" class="menu-list__link">портфолио</a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a href="#about" class="menu-list__link">о нас</a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a href="#advantages" class="menu-list__link">преимущества</a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a href="#contacts" class="menu-list__link">контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer-contacts">
+                    <a href="tel:+380954585819" class="footer-contacts__phone">+38 (095) 45-85-819</a>
+                    <a href="mailto:as.studio2019@gmail.com" class="footer-contacts__email">as.studio2019@gmail.com</a>
+                </div>
+            </div>
         </footer>
     </div>
-    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="./js/jquery.isotope.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

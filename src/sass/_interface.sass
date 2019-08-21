@@ -50,4 +50,46 @@ a
     opacity: 0 
 .burger-open .burger-bottom__line
     transform: rotate(-45deg)
-    top: 10px         
+    top: 10px 
+.section
+    padding: 60px 0
+    &-title
+        font-weight: bold
+        font-size: 34px
+        line-height: 46px
+        letter-spacing: -0.01em
+        color: #000000 
+        margin: 0   
+    &-line
+        background: url(../img/line.png) no-repeat
+        max-width: 148px
+        height: 10px
+        width: 100% 
+        margin-top: 14px 
+    &-subtitle
+        font-family: Roboto, sans-serif
+        font-weight: normal
+        font-size: 14px
+        line-height: 20px
+        letter-spacing: 0.25px     
+        color: #000000
+        display: block  
+    &-link
+        box-shadow: 0px 2px 4px rgba(47, 168, 79, 0.24), 0px 4px 8px rgba(47, 168, 79, 0.16)
+        background-color: #2FA84F
+        color: #ffffff
+        font-family: Roboto, sans-serif
+        font-weight: 500
+        letter-spacing: 0.75px
+        text-transform: uppercase 
+        width: 100%  
+        border-radius: 30px
+        display: flex
+        align-items: center
+        justify-content: center 
+.isotope .isotope-item
+    transition-property: transform, opacity
+.isotope, .isotope .isotope-item
+    transition-duration: 0.8s
+.isotope-item
+    z-index: 2

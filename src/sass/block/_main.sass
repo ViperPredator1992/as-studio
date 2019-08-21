@@ -1,20 +1,65 @@
 .main
-    position: relative
-    min-height: 610px
-    &::before
-        content: ''
-        background: url(../img/frame.jpg) left center no-repeat
-        min-height: 610px
-        width: 50%
-        position: absolute
-        top: 0
-        left: 0
-        z-index: 5
-    &::after
-        content: ''
-        background: url(../img/header_img.jpg) right center no-repeat
-        min-height: 610px
-        width: 50%
-        position: absolute
-        top: 0
-        right: 0
+    background-image: url(../img/frame.jpg), url(../img/header_img.jpg)
+    background-position: left center, center right
+    background-size: 50%, contain
+    background-repeat: repeat-y, no-repeat
+    &-section
+        & .container
+            padding: 142px 15px 169px
+    &-block
+        &:first-child
+            max-width: 386px 
+        &:last-child
+            position: absolute
+            right: -150px              
+        &__subtitle
+            max-width: 285px
+            margin-bottom: 35px
+        &__line
+            margin-bottom: 15px    
+        &__link
+            width: 100%
+            max-width: 190px
+            height: 40px    
+        &s
+            position: relative
+            display: flex
+            align-items: center
+            justify-content: space-between
+    &-wrap
+        display: flex
+        align-items: center
+        &:nth-child(2)
+            margin: 0 50px
+        &__number
+            color: $white
+            font-family: Roboto, sans-serif
+            font-style: normal
+            font-weight: 900
+            font-size: 60px
+            line-height: 70px
+        &__text
+            max-width: 90px;
+            font-family: Roboto, sans-serif
+            font-weight: 500
+            line-height: 22px
+            letter-spacing: 0.1px 
+            color: $white
+            position: relative
+            margin-left: 14px
+            &::before
+                content: ''
+                position: absolute
+                top: 7px
+                left: -7px
+                width: 2px
+                height: 28px
+                background-color: $white 
+    &-inner
+        &-top
+            max-width: 620px
+            width: 100%
+            display: flex
+        &-bottom
+            display: flex  
+            justify-content: center                  
