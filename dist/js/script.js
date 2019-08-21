@@ -64,6 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     });
 
+    // Validate form
     $('#form').validate({
         lang: 'ru',
         rules: {
@@ -90,5 +91,91 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
+
+    // Slider
+    const slider = () => {
+
+        const slide = document.querySelectorAll('.review-list__item'),
+            slider = document.querySelector('.review-list');
+        let currentSlide = 0,
+            interval;
+
+        const prevSlide = (elem, index, strClass) => {
+            elem[index].classList.remove(strClass);
+        };
+
+        const nextSlide = (elem, index, strClass) => {
+            elem[index].classList.add(strClass);
+        };
+
+        const autoPlaySlide = () => {
+
+            prevSlide(slide, currentSlide, 'review-list__item-active');
+            currentSlide++;
+            if (currentSlide >= slide.length) {
+                currentSlide = 0;
+            }  
+            nextSlide(slide, currentSlide, 'review-list__item-active');
+
+        };
+
+        const startSlide = (time = 3000) => {
+            interval = setInterval(autoPlaySlide, time);
+        };
+
+        const stopSlide = () => {
+            clearInterval(interval);
+        };
+
+        slider.addEventListener('click', (event) => {
+
+            event.preventDefault();
+            let target = event.target;
+
+            if (!target.matches('.review-arrow__prev, .review-arrow__next')) {
+                return;
+            }
+
+            prevSlide(slide, currentSlide, 'review-list__item-active');
+
+            if (target.matches('.review-arrow__next')) {
+                currentSlide++;
+            } else if (target.matches('.review-arrow__prev')) {
+                currentSlide--; 
+            }
+
+            if (currentSlide >= slide.length) {
+                currentSlide = 0;
+            }
+
+            if (currentSlide < 0) {
+                currentSlide = slide.length - 1;
+            }
+
+            nextSlide(slide, currentSlide, 'review-list__item-active');
+
+        });
+
+        slider.addEventListener('mouseover', (event) => {
+
+            if (event.target.matches('.review-arrow__prev, .review-arrow__next')) {
+                stopSlide();
+            }
+
+        });
+
+        slider.addEventListener('mouseout', (event) => {
+
+            if (event.target.matches('.review-arrow__prev, .review-arrow__next')) {
+                startSlide();
+            }
+
+        });
+
+        startSlide(3000);
+
+    };
+
+    slider();
 
 });
