@@ -18,6 +18,11 @@
             &:last-child
                 right: 0
 @media (max-width: 1170px)
+    .case
+        &-block
+            &__image
+                & img
+                    max-width: 450px
     .portfolio
         &-block
             &__link
@@ -25,7 +30,7 @@
                     max-width: 220px
         &-works
             margin: auto
-            max-width: 880px
+            max-width: 880px          
 @media (max-width: 1140px)
     .header
         &__email
@@ -63,6 +68,15 @@
             &s
                 max-width: 800px
                 margin: auto                        
+@media (max-width: 949px)
+    .case
+        &-block
+            flex-direction: column
+            align-items: center
+            &__image
+                margin-bottom: 25px
+            &__description
+                margin-left: 0        
 @media (max-width: 920px)
     .header
         & .container
@@ -225,7 +239,10 @@
         &-block
             margin-bottom: 20px
         &__line
-            margin-bottom: 15px                                                                   
+            margin-bottom: 15px 
+    .case
+        &__line
+            margin-bottom: 30px                                                                              
 @media (max-width: 391px)
     .portfolio
         &-list

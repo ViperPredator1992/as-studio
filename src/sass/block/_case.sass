@@ -1,3 +1,70 @@
 .case
     &__line
         margin-bottom: 80px
+    &-block
+        display: flex
+        flex-wrap: wrap
+        align-items: end
+        justify-content: center
+        margin-bottom: 40px
+        &__image
+            box-shadow: 0px 0px 62px rgba(0, 0, 0, 0.3)
+            & img
+                max-width: 670px
+                width: 100%
+        &__description
+            max-width: 420px
+            width: 100%
+            margin-left: 50px
+    &-top
+        display: flex
+        align-items: center
+        &__image
+            margin-right: 40px
+            max-width: 90px
+            width: 100%
+        &__title
+            font-weight: normal
+            font-size: 20px
+            line-height: 30px
+            letter-spacing: 0.15px  
+            color: $black
+            margin: 0
+    &-list
+        margin: 25px 0
+        padding: 0
+        list-style: none
+        display: flex
+        flex-wrap: wrap
+        &__item
+            font-family: Roboto, sans-serif
+            font-weight: normal
+            line-height: 20px
+            letter-spacing: 0.25px
+            margin-bottom: 8px
+            &:nth-child(odd)
+                color: $adv-text
+                width: 50%
+            &:nth-child(even)
+                color: $blue
+                width: 50%
+    &-content
+        margin: 0 0 30px
+        font-family: Roboto, sans-serif
+        color: $black
+        font-weight: normal
+        line-height: 20px
+        letter-spacing: 0.25px 
+    &-link
+        width: 280px
+        height: 40px
+        display: flex
+        align-items: center
+        justify-content: center
+        color: $white  
+        font-family: Roboto, sans-serif
+        font-weight: 500
+        letter-spacing: 0.75px
+        text-transform: uppercase  
+        background-color: $green
+        border-radius: 40px                                          
