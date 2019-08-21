@@ -20,10 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 } else {
                     menuNav.style.display = 'block';
                 }
-            } else if (target.closest('burger')) {
-                menu.classList.remove('burger-open');
-                menuNav.style.display = 'none';
-            } else if (target.tagName !== 'DIV') {
+            } 
+            else if (target.closest('burger')) {
                 menu.classList.remove('burger-open');
                 menuNav.style.display = 'none';
             } else {
@@ -37,6 +35,14 @@ document.addEventListener('DOMContentLoaded', () => {
     burgerMenu();
 
     // Scroll menu
+    $(".nav").on("click", ".nav-list__link", function (event) {
+        event.preventDefault();
+        var id = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({
+            scrollTop: top
+        }, 1500);
+    });
 
     // Isotope
     $(function () {
