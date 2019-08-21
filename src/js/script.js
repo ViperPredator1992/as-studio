@@ -64,4 +64,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
     });
 
+    $('#form').validate({
+        lang: 'ru',
+        rules: {
+            name: {
+                required: true
+            },
+            phone: {
+                required: true
+            },
+            email: {
+                required: true
+            }
+        },
+        messages: {
+            name: {
+                required: "Введите имя"
+            },
+            phone: {
+                required: "Введите телефон"
+            },
+            email: {
+                required: "Введите email",
+                email: "Введите корректный email"
+            }
+        }
+    });
+
 });
